@@ -140,73 +140,41 @@ h2 {
     margin: 0 auto;
 }
 
+/* chama classe do bootstrap para modificar a cor */
 .form-control {
     background-color: #F1EDEF;
-    border: 2px solid var(--laranja-claro);
-    font-size: 1rem;  
-    color: var(--cor-escura);  
 }
 
-.form-control:focus {
-    box-shadow: 0 0 5px var(--laranja-claro);
-    border-color: var(--laranja-claro);
+.alto-contraste{
+    background-color: var(--alto-contraste-fundo);
+    color: var(--alto-contraste-texto);
 }
 
-/* Botões de Acessibilidade */
-#acesibilidad button {
-    margin: 0 5px;
-    padding: 10px 20px;
-    font-size: 1rem;
-    font-weight: 600;
-    background-color: var(--verde-tropical);
-    border: none;
-    color: white;
-    border-radius: 5px;
+.alto-contraste header,
+.alto-contraste footer,
+.alto-contraste .formulario{
+    background-color: var(--alto-contraste-fundo);
+    color: var(--alto-contraste-texto);
 }
 
-#acesibilidad button:focus {
-    outline: 3px solid var(--laranja-claro);
-    outline-offset: 2px;
+.alto-contraste .nav-link{
+    color: var(--alto-contraste-link);
 }
 
-/* Footer */
-footer {
-    background-color: var(--cor-escura);
-    color: white;
-    padding: 1.5rem;
-    text-align: center;
+.alto-contraste .botao-inicio,
+.alto-contraste .formulario button,
+.alto-contraste .btn-primary{
+    background-color: var(--alto-contraste-link);
+    color: var(--alto-contraste-fundo)
 }
 
-footer i {
-    font-size: 2rem;
-    margin: 0 15px;
-    cursor: pointer;
+.alto-contraste #tropicalia {
+    background: none;
 }
 
-footer i:hover,
-footer i:focus {
-    color: var(--verde-tropical);
-    outline: 3px solid var(--laranja-claro);
-    outline-offset: 2px;
+.alto-contraste #galeria {
+    background-color: var(--alto-contraste-fundo);
 }
-
-/* Visibilidade de foco */
-a:focus,
-button:focus,
-input:focus,
-textarea:focus {
-    outline: 3px solid var(--laranja-claro);
-    outline-offset: 2px;
-}
-
-/* Adaptabilidade de tamanhos de fonte */
-@media (max-width: 768px) {
-    h1 {
-        font-size: 2rem;
-    }
-
-    .inicio-fundo {
-        flex-direction: column;
-        text-align: center;
-    }
+.alto-contraste .fundo-galeria {
+    background: none;
 }
